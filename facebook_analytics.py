@@ -104,7 +104,7 @@ for boi in (thebois):
   print(boi + ":")
   print("  Messages : " + str(thebois[boi].msg_count))
   print("  Photos   :   " + str(thebois[boi].photos))
-  print("  Reactions Recieved: ")
+  print("  Reactions Received: ")
   for react in sorted(thebois[boi].recv_reacts.keys()):
     print("     " + str(react.encode('latin1').decode('utf8')) +  ": " + str(thebois[boi].recv_reacts[react]))
   print("  Reactions Given: ")
@@ -208,7 +208,7 @@ for boi in (thebois):
   p = tf.add_paragraph()
   p.text = "Messages:   " + str(thebois[boi].msg_count)
   p = tf.add_paragraph()
-  p.text = "Reactions Recieved:     "
+  p.text = "Reactions Received:     "
   for react in sorted(thebois[boi].recv_reacts.keys()):
       p = tf.add_paragraph()
       p.level = 2
